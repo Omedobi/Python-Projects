@@ -27,7 +27,7 @@ pip install beautifulsoup4 requests
 3. Define the `weather` function, which takes a city name as input, performs a Google search for the weather of that city, and prints the relevant information:
    ```python
    def weather(city):
-       # ... (rest of the code)
+       
    ```
 
 4. Get user input for the city name and call the `weather` function:
