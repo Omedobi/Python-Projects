@@ -1,11 +1,12 @@
-#pip install speedtest
+#pip install speedtest-cli
 
-import speedtest as st
+import speedtest
+
 
 def Speed_test():
-  test = st.Speed_test()
+  test = speedtest.Speedtest()
 
-  down_Speed = test.download()
+  down_speed = test.download()
   down_speed = round(down_speed / 10**6, 2)
   print("Download speed in Mbps: ", down_speed)
 
@@ -14,6 +15,6 @@ def Speed_test():
   print("Upload speed in Mbps: ", up_speed)
 
   ping = test.results.ping
-  print("Ping: ", ping)
+  print("Ping: ", ping, "ms")
 
-speed_test()
+Speed_test()
